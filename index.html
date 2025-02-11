@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+
+        }
+        .home-page{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+            /* position:relative; */
+        }
+   
+        .nav-bar{
+            width:100vw;
+            height:50px;
+            box-shadow:0px 0px 20px 15px rgb(36, 36, 36)  ;
+            /* border:1px solid red; */
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+              background:linear-gradient(45deg, rgb(247, 251, 247),rgb(42, 39, 39));
+            position:fixed;
+        }
+        .ngo-logo{
+         width:200px;
+         height:100%;
+          /* border:1px solid black; */
+          display:flex;
+          gap:10px;
+          align-items: center;
+          justify-content: space-between;
+              /* transition:all 6s  linear ; */
+                animation:logoo 1s  ease forwards;
+             
+             
+        }
+          @keyframes logoo{
+            from{ 
+                /* opacity:0; */
+                transform:translateX(-100%);
+            }
+        
+        to{
+            /* opacity:1; */
+             transform:translateX(0);
+
+        }
+    }
+      
+        .ngo-logo:hover{
+              transform: translate(200px);
+        }
+        
+        .ngo-logo img{
+            width:50px;
+            height:50px;
+           border-radius:50%;
+         
+
+        }
+     
+     
+        #ngo-name{
+            font-family:cursive;
+            font-size:35px;
+        }
+        .contact-us a{
+            text-decoration:none;
+            color:black;
+            font-size :20px;
+            font-family: sans-serif;
+            font-weight:600;
+        }
+    
+        .contact-us>a:hover{
+        
+            font-size:30px;
+            color:antiquewhite
+        }
+
+        .ngo-homepage-image{
+            width:100vw;
+            height:700px;
+            border:1px solid black;
+            overflow: hidden;
+        }
+        .ngo-homepage-image>img{
+            width:100%;
+            height:100%;
+            background-color: black;
+            
+          
+            
+        }
+        #contact-us-footer{
+            /* border:1px solid red; */
+            width:100%;
+            height:180px;
+            display:flex;
+            justify-content: space-evenly;
+            margin:auto;
+            align-items: center;
+            overflow: hidden;
+            background:linear-gradient(black,white);
+             /* opacity:0.75; */
+            
+         
+        }
+        #contact-us-footer a{
+            text-decoration: none;
+               color:rgb(247, 246, 245);
+           
+        }
+         #contact-us-footer li{
+            list-style: none;
+
+         }
+          #contact-us-footer div img{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+          }
+          .contact-us-footer-left{
+             /* border:1px solid red; */
+             display:flex;
+             width:250px;
+             justify-content:space-between;
+             align-items: center;
+          }
+           .contact-us-footer-right{
+             /* border:1px solid red; */
+             display:flex;
+             width:320px;
+             justify-content:space-between;
+             align-items: center;
+          }
+          .right{
+           line-height: 25px;
+           font-size: 20px;
+          
+          }
+          .sign-up{
+            /* border:1px solid black; */
+            width:260px;
+            height:230px;
+            background-color: rgb(35, 34, 33);
+            position:absolute;
+            bottom:150px;
+            left:40px;
+            /* margin-top:300px; */
+            opacity:.75;
+            padding:30px;
+            color:rgb(140, 146, 237);
+            display:flex;
+            animation:leftpart 1s  ease forwards;
+            
+          }
+            /* @keyframes leftpart{
+            from{ 
+                opacity:0;
+                transform:translateX(-200%);
+            } */
+/*         
+        to{
+           
+             transform:translateX(0);
+
+           }
+          } */
+          .sign-up input{
+            padding:2px;
+            width:130px;
+          }
+          /* .button{
+            margin-left:70px;
+            margin-top:30px;
+            border-radius: 5px;
+            color:azure;
+         
+            background-color: rgb(32, 107, 112);
+            border:none;
+           
+
+          }
+           .button:hover{
+              background-color: rgb(211, 99, 47);
+           } */
+           #sign{
+            /* margin-left:60px; */
+             border:1px solid rgb(147, 66, 66);
+             background-color: rgb(197, 80, 13);
+            text-decoration: none;
+            color:aliceblue;
+            
+           }
+          .sign-up a{
+             text-decoration: none;
+           }
+         
+         @media (min-width:1028px)
+         {
+            .sign-up{
+                width:330px;
+                height:250px;
+                position:absolute;
+                bottom:170px;
+                left:400px;
+                animation:none;
+                   margin-top:300px;
+             
+                  animation:leftpart 1s  ease forwards;
+
+
+            }
+              @keyframes leftpart{
+            from{ 
+                opacity:0;
+                transform:translateX(-200%);
+            }
+                    
+        to{
+           
+             transform:translateX(0);
+
+           }
+          } 
+             .sign-up input{
+            padding:4px;
+            width:180px;
+          }
+         }
+
+    </style>
+</head>
+<body>
+    <div class="home-page">
+    <div class="nav-bar">
+    <div class="ngo-logo">
+          <img src="images/ngo-logo.jpg" alt="ngo-logo">
+        <h3 id="ngo-name">Helpers</h3>
+      </div>
+      <div class="contact-us">
+        <a href="#contact-us-footer" style="margin-right:22px;">contact-us</a>
+      </div>
+    </div>
+    <div class="ngo-homepage-image">
+        <img src="images/home-image.jpg" alt="homepage-image">
+    </div>
+    <div id="contact-us-footer">
+        <div class="contact-us-footer-left">
+        <div class="left">
+            <img src="images/calling.jpg">
+        </div>
+        <div class="right">
+           
+        <ul>
+            <li><a href="#">91+8843395672</a></li>
+            <li><a href="#">91+6396486634</a></li>
+            <li><a href="#">91+9696886406</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="contact-us-footer-right">
+    <div class="left">
+        <img src="images/mail.jpg">
+    </div>
+    <div class="right">
+        
+        <ul>
+            <li><a href="#">ngo_service@gmail.com</a></li>
+            <li><a href="#">helpers@gmail.com</a></li>
+            <li><a href="#">services123@gmail.com</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="sign-up">
+        <form>
+            <table>
+              <tr>
+                <td colspan="2"><H3 style="color:rgb(65, 176, 113);">SIGN -UP IN  THE PAGE</H3><BR></td>
+              </tr>
+                <tr>
+                    <td>USER NAME:</td>
+                    <td>
+                        <input type="text" placeholder="enter the user name" name="name" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>PASSWORD:</td>
+                    <td>
+                        <input type="text" placeholder="enter password" name="password" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                       <a href="donation.html" id="sign">sign-up</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+         .nav-bar{
+            width:100vw;
+            height:30px;
+            box-shadow:0px 0px 20px 15px rgb(36, 36, 36)  ;
+            /* border:1px solid red; */
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+              background:linear-gradient(45deg, rgb(228, 221, 165),rgb(45, 11, 11));
+            /* position:fixed; */
+        }
+        .ngo-logo{
+         width:150px;
+         height:100%;
+          /* border:1px solid black; */
+          display:flex;
+          gap:10px;
+          align-items: center;
+          justify-content: space-between;
+              /* transition:all 6s  linear ; */
+                animation:logoo 1s  ease forwards;
+             
+             
+        }
+          @keyframes logoo{
+            from{ 
+                /* opacity:0; */
+                transform:translateX(-100%);
+            }
+        
+        to{
+            /* opacity:1; */
+             transform:translateX(0);
+
+        }
+    }
+     .ngo-logo img{
+            width:30px;
+            height:30px;
+           border-radius:50%;
+         
+
+        }
+     
+     
+        #ngo-name{
+            font-family:cursive;
+            font-size:26px;
+        }
+         .donate-bar{
+            width:300px;
+            height:100%;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .donate-bar div{
+           
+             font-size: 13px;
+             font-family: sans-serif;
+             margin-right:20px;
+
+        }
+          .donate-bar a{
+            text-decoration: none;
+            color:white;
+
+          }
+           .donate{
+            background-color: rgb(34, 160, 17);
+            padding:7px;
+            border-radius: 5px;
+          }
+          .donate:hover{
+            background-color: chartreuse;
+          }
+        body{
+              background-image: url(https://www.dishafoundation.ngo/img/slider-1.jpeg);
+               background-position: relative;
+             
+                background-size:cover;
+            background-repeat:no-repeat;
+           
+          
+        
+            }
+        .container{
+            /* border:1px solid red; */
+            width:100vw;
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+          
+        
+           
+            
+        }
+        .first{
+          
+            width:60%;
+            height:300px;
+            overflow:hidden;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          gap:10px;
+          margin-left:10px;
+          padding:2px ;
+        
+
+
+
+        }
+       
+        .first>.first-img{
+            width:30%;
+            height:230px;
+            overflow: hidden;
+            border-radius: 5px;
+          
+        }
+        .first>.first-img:hover
+        {
+              box-shadow: 0px 0px 10px rgb(223, 222, 222);
+        }
+        .first>.first-data{
+            width:50%;
+            height:100%;
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background:linear-gradient(45deg,rgb(176, 220, 122),rgb(89, 106, 110));
+            padding:30px;
+            overflow: hidden;
+            font-size: 12px;
+            border-radius: 5px;
+           
+            
+
+        }
+         .first>.first-data:hover{
+               box-shadow: 0px 0px 10px rgb(186, 185, 185);
+         }
+         .first .first-data p{
+          
+            color: rgb(232, 228, 222);
+            margin-left:20px;
+        
+         }
+          .first>.first-data>#donate{
+        padding:7px;
+        border-radius: 5px;
+        background-color: rgb(122, 73, 10);
+        color:white;
+        font-family: cursive;
+      
+        border:none
+         
+
+          }
+           .first>.first-data>a{
+              text-decoration: none;
+           }
+          .first>.first-data>#donate:hover{
+            background-color: rgb(230, 168, 88);
+
+          }
+          #summer{
+                  animation:summer 1s  ease forwards;
+             
+             
+        }
+          @keyframes summer{
+            from{ 
+                /* opacity:0; */
+                transform:translateX(-100%);
+            }
+        
+        to{
+            /* opacity:1; */
+             transform:translateX(0);
+
+        }
+    }
+    #winter{
+              animation:winter 1.5s  ease forwards;
+             
+             
+        }
+          @keyframes winter{
+            from{ 
+                /* opacity:0; */
+                transform:translateX(-100%);
+            }
+        
+        to{
+            /* opacity:1; */
+             transform:translateX(0);
+
+        }
+    }
+    #utensils{
+              animation:utensils 1.75s  ease forwards;
+             
+             
+        }
+          @keyframes utensils{
+            from{ 
+                /* opacity:0; */
+                transform:translateX(-100%);
+            }
+        
+        to{
+            /* opacity:1; */
+             transform:translateX(0);
+
+        }
+    }
+    #books{
+              animation:books 2s  ease forwards;
+             
+             
+        }
+          @keyframes books{
+            from{ 
+                /* opacity:0; */
+                transform:translateX(-100%);
+            }
+        
+        to{
+            /* opacity:1; */
+             transform:translateX(0);
+
+        }
+    }
+     @media only screen and (max-width:797px)
+        {
+            .first{
+                /* flex-direction: column; */
+                  
+            width:320px;
+            height:300px;
+            
+            
+
+            }
+            .first-img{
+                   width:560px;
+            height:50px;
+            }
+            .a{
+                display:none;
+            }
+        }
+    
+    
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="ngo-logo">
+                <img src="images/ngo-logo.jpg" alt="ngo-logo">
+                <h3 id="ngo-name">Helpers</h3>
+            </div>
+            <div class="donate-bar">
+               
+                <div class="donate"><a href="donation.html">back</a></div>
+            </div>
+        </div>
+      <h3 style="color:white;font-size:23px; margin-top:10px;">🌞 Summer Cloth Donation Drive 2024 🌞</h3>
+   
+        <hr> 
+        <div class="first" id="summer">
+       
+            <div class="first-img">
+                <img src="images/summer.jpg">
+            </div>
+            <div class="first-data">
+                <p class="a">As the temperature rises, many individuals and families in need struggle to stay cool without access to
+                    proper clothing.</p>
+                <p class="a">Your donation of light, breathable summer clothing can make a big difference in their lives.</p>
+                <ul>
+                    <li>We are collecting:</li>
+        
+                    <li>👕 Cotton T-shirts and Tops</li>
+                    <li>👗 Dresses and Skirts</li>
+                    <li> 🩳 Shorts and Light Trousers</li>
+                   
+                    <li>👟 Lightweight Shoes and Sandals</li>
+                </ul>
+                <p class="a">New or gently used items in good condition</p>
+                <p class="a">Your generosity can help us spread smiles this summer! Drop off your donations at  contact
+                    us at [8846623942/healthy@gmail.com] for pickup options. Together, we can make this summer more bearable for
+                    everyone.</p>
+        
+                <p style="color:rgb(104, 12, 165);font-size: 15px;font-weight: bold;"> Thank you for your support!</p>
+                <a href="donation_form.html" id="donate">donate</a>
+        
+            </div>
+            </div>
+            <h3 style="color:white;font-size:23px; margin-top:10px;">❄️ Winter Cloth Donation Drive 2024 ❄️</h3><hr>
+        <div class="first" id="winter">
+       
+            <div class="first-img">
+                <img src="images/winter.jpg">
+            </div>
+            <div class="first-data ">
+                <p class="a">As temperatures drop, countless individuals face the harsh reality of winter without adequate clothing to keep them
+                warm. You can be the reason someone feels the warmth and comfort they desperately need.</p>
+                 
+                    <ul>
+                 <li>We are collecting:</li>  
+                
+                    <li>🧥 Warm Jackets and Sweaters</li>
+                    <li>🧣 Scarves, Mufflers, and Shawls</li>
+                 
+                    <li>🛏️ Blankets and Quilts</li>
+                   <li>👖 Woolen Pants and Thermal Wear</li>
+                
+                </ul>
+                   
+                    <p class="a">Every donation brings warmth to someone in need. Drop off your winter clothing  reach out to us at
+                    [8853339586/healthy@gmail.com] for pickup arrangements.</p>
+                    <p class="a">Together, let's ensure no one is left in the cold this winter. Thank you for making a difference!</p>
+        
+                   <p style="color:rgb(104, 12, 165);font-size: 15px;font-weight: bold;"> Thank you for your support!</p>
+            <a href="donation_form.html" id="donate">donate</a>
+        
+            </div>
+        </div>
+       <h3 style="color:white;font-size:23px; margin-top:10px;" >🏠 Utensils Donation Drive 2024 🧺</h3><hr> 
+    <div class="first" id="utensils">
+    
+        <div class="first-img">
+            <img src="images/utensils.jpg">
+        </div>
+        <div class="first-data" style="padding:10px;">
+            <p class="a">Many families and communities in need lack the basic utensils required for cooking and dining. Your donation of utensils
+            can make a significant impact, helping them prepare and enjoy meals with dignity.</p>
+           
+            <ul>
+                <li>We are collecting:</li>
+    
+                <li>🍴 Plates, Bowls, and Cups</li>
+                <li>🍳 Pots, Pans, and Cooking Tools</li>
+                <li>🔪 Kitchen Knives and Cutting Boards</li>
+                <li>🫖 Storage Containers and Bottles</li>
+               
+                <li>Any new or gently used utensils in good condition</li>
+            </ul>
+           
+            <p class="a">Your contributions will support families, shelters, and community kitchens in their daily needs. Drop off your donations
+            at contact us at [8894476754/healthy@gmail.com] for pickup options.</p>
+            <p class="a">Together, let's empower lives, one meal at a time. Thank you for your kindness and generosity!</p>
+    
+            <p style="color:rgb(104, 12, 165);font-size: 15px;font-weight: bold;"> Thank you for your support!</p>
+            <a href="donation_form.html" id="donate">donate</a>
+    
+        </div>
+        </div>
+        <h3  style="color:white;font-size:23px; margin-top:10px;" >📚 Books Donation Drive 2024 🌟</h3><hr>
+        <div class="first" id="books">
+           
+        
+            <div class="first-img">
+                <img src="images/book.jpg">
+            </div>
+            <div class="first-data">
+                <p class="a">Let's Spread Knowledge and Warmth Together!
+healthy is hosting a Books Donation Drive to support underprivileged individuals with resources to learn, grow, and live with dignity. Your contributions can change lives.</p>
+               
+                <ul>
+                    <li>We are collecting:</li>
+        
+                    <li>📖 Textbooks (School and College)</li>
+                    <li>📚 Storybooks, Novels, and Magazines</li>
+                    <li>📓 Notebooks and Educational Material</li>
+                    <li>🎨 Activity and Coloring Books</li>
+                   
+                </ul>
+               
+                <p class="a">Your generosity can help us spread smiles  Drop off your donations at  contact
+                    us at [8846623942/healthy@gmail.com] for pickup options. Together, we can make this summer more bearable for
+                    everyone.</p>
+        
+                <p style="color:rgb(104, 12, 165);font-size: 15px;font-weight: bold;"> Thank you for your support!</p>
+            <a href="donation_form.html" id="donate">donate</a>
+        
+            </div>
+        
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+         
+         *{
+         
+         margin:0;
+         padding:0;
+         box-sizing: border-box;
+         }
+            
+        .nav-bar{
+            width:100vw;
+            height:30px;
+            box-shadow:0px 0px 20px 15px rgb(36, 36, 36)  ;
+            /* border:1px solid red; */
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+              background:linear-gradient(45deg, rgb(228, 221, 165),rgb(45, 11, 11));
+            /* position:fixed; */
+        }
+        .ngo-logo{
+         width:150px;
+         height:100%;
+          /* border:1px solid black; */
+          display:flex;
+          gap:10px;
+          align-items: center;
+          justify-content: space-between;
+              /* transition:all 6s  linear ; */
+                animation:logoo 1s  ease forwards;
+             
+             
+        }
+          @keyframes logoo{
+            from{ 
+                /* opacity:0; */
+                transform:translateX(-100%);
+            }
+        
+        to{
+            /* opacity:1; */
+             transform:translateX(0);
+
+        }
+    }
+     .ngo-logo img{
+            width:30px;
+            height:30px;
+           border-radius:50%;
+         
+
+        }
+     
+     
+        #ngo-name{
+            font-family:cursive;
+            font-size:26px;
+        }
+        .donate-bar{
+            width:300px;
+            height:100%;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .donate-bar div{
+           
+             font-size: 13px;
+             font-family: sans-serif;
+             margin-right:20px;
+
+        }
+          .donate-bar a{
+            text-decoration: none;
+            color:white;
+
+          }
+          .donate{
+            background-color: rgb(34, 160, 17);
+            padding:7px;
+            border-radius: 5px;
+          }
+          .donate:hover{
+            background-color: chartreuse;
+          }
+          .donate-image{
+           width:100%;
+           height:450px;
+           /* border:1px solid red; */
+           background:linear-gradient(rgb(65, 65, 39),white);
+           display:flex;
+           align-items: center;
+           justify-content: center;
+           /* display:flex; */
+           overflow: hidden; 
+           margin-top:5px;
+           /* box-shadow:0px 0px 5px black ; */
+
+          }
+          .swiper{
+            width:80%;
+            height:fit-content;
+             box-shadow:0px 0px 10px rgb(35, 34, 34) ;
+           
+          }
+          .swiper-slide img{
+            width:100%;
+             height:450px;
+            
+
+          }
+          .swiper .swiper-button-prev, .swiper .swiper-button-next{
+            color:white;
+          }
+          .swiper .swiper-pagination-bullet-active{
+            background:white
+          }
+          #about-us-page{
+            width:100vw;
+            height:700px;
+            /* border:1px solid red; */
+            margin-top:30px;
+            overflow: hidden;
+            background-color: rgb(228, 179, 114);
+           
+
+          }
+          .about-container{
+             /* border:1px solid black; */
+             width:90%;
+            
+             display:flex;
+             overflow: hidden;
+             margin:auto;
+             justify-content: center;
+             align-items: center;
+             margin-top:28px;
+             background:linear-gradient(45deg,rgb(222, 176, 59),rgb(213, 210, 210));
+           
+
+
+          }
+          .about-container>.about-left{
+
+            /* border:1px solid blue; */
+            width:60%;
+            
+            line-height: 30px;
+         
+            
+
+          }
+          /* @media (max-width:891px)
+          {
+             .about-container>.about-left{
+                 line-height: 10px;
+             }
+          } */
+           .about-container>.about-right{
+            /* border:1px solid black; */
+            width:30%;
+            height:300px;
+            margin:auto;
+            margin-bottom:300px;
+            overflow: hidden;
+          
+
+           }
+           .about-left h3{
+            color:black;
+            font-family: sans-serif;
+            font-size: 20px;
+           }
+           #about-us-page h2{
+            font-size:50px;
+            margin-left:20px;
+            font-family:  monospace;
+            color:rgb(16, 49, 16);
+
+           }
+            #about-us-page p{
+              font-size:14px
+            }
+             .about-right{
+              border-radius: 2px;
+               box-shadow: 0px 0px 10px black; 
+               /* transition:all 5s 1s ease;  */
+              
+            
+             }
+             .about-right:hover{
+               width:33%;
+              height:330px;
+              box-shadow: 0px 0px 20px black; 
+
+               
+
+             }
+             @media only screen and (max-width:600px)
+             {
+              
+                 
+                    .about-container>.about-left{
+                      width:90%;
+                     
+                      /* font-size: 3px; */
+                       line-height: 15px;
+
+                    }
+                     .about-left h3{
+           
+          
+            font-size: 13px;
+           }
+           #about-us-page h2{
+            font-size:25px;
+        
+           }
+            #about-us-page p{
+              font-size:12px
+            }
+           
+             
+             }
+            
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="ngo-logo">
+               <img src="images/ngo-logo.jpg" alt="ngo-logo">
+                <h3 id="ngo-name">Helpers</h3>
+              </div>
+              <div class="donate-bar">
+                <div class="back"><a href="index.html">back</a></div>
+                <div class="about" ><a href="#about-us-page">about-us</a></div>
+                <div class="donate"><a href="donation-page.html">donate</a></div>
+             </div>
+        </div>
+        <div class="donate-image">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/image1.jpg"></div>
+                    <div class="swiper-slide"><img src="images/image2.jpg"></div>
+                    <div class="swiper-slide"><img src="images/image3.jpg"></div>
+                    <div class="swiper-slide"><img src="images/image4.jpg"></div>
+                    <div class="swiper-slide"><img src="images/image5.jpg"></div>
+                  
+                  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+              
+            </div>
+        </div>
+        <div id="about-us-page">
+          <h2>about us</h2>
+          <div class="about-container">
+            <div class="about-left">
+             <h3 class="a"><u> Who We Are</u></h3>
+             <p class="b"> Helper is a non-profit organization committed to  empowering
+              communities, conserving the environment, supporting education, etc. Since our founding in 2010, we have been working
+              to create sustainable and meaningful change through  advocacy, programs, partnerships</p><br>
+            
+              
+              <h3 class="a"><u>Our Mission</u></h3>
+             <p class="b"> Our mission is to provide education ,food,hospital facilities to poor childrens and families. We strive to 
+              e "build a world where every child has access to quality education" or "protect natural ecosystems for future
+              generations".</p><br>
+              
+              <h3 class="a"><u>Our Vision</u></h3>
+             <p class="b"> A future where  "no one goes to bed
+              hungry" or "communities thrive in harmony with nature".</p><br>
+              
+              <h3 class="a"><u>What We Do</u></h3>
+              <p class="b">At Healthy, we focus on 
+              
+              education:we provid a queality education to the poor children ,and help them to choose their carrier.
+              providing food:we provide food and freslay prepared vegitable and nutritious food and and make sure to increase protien
+              intake.
+             </p><br>
+           
+              <h3 class="a"><u>Join Us</u></h3>
+              <p>Together, we can make a difference. Whether you choose to volunteer, donate, or advocate, your support helps us create
+              lasting change. Learn more about how you can [include links to "Get Involved," "Donate," or "Volunteer"].</p>
+             
+             <h3 class="a"><u> Contact Us</u></h3>
+              <p class="b">Have questions or want to learn more? Reach out at 91+6388224473/instagram.</p><br>
+
+            </div>
+            <div class="about-right">
+              <img src="images/image7.jpg">
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+                // Optional parameters
+             autoplay:{
+              delay:3000,
+              disableOnInteraction:false,
+
+             },
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable:true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+               
+            });
+    </script>
+</body>
+</html>
